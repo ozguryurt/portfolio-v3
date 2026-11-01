@@ -12,8 +12,12 @@ dist
 dist-ssr
 *.local
 
-# Local images (including all project images)
-/public/images/
+# Keep image directories while excluding their contents
+/public/images/*
+!/public/images/.gitkeep
+!/public/images/projeler/
+/public/images/projeler/*
+!/public/images/projeler/.gitkeep
 
 # Editor directories and files
 .vscode/*
