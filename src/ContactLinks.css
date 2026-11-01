@@ -1,0 +1,85 @@
+.contact-links {
+  border-top: 1px solid #aaa08d;
+  min-width: 0;
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 27px 0;
+  border-bottom: 1px solid #b8ae9b;
+  transition:
+    padding 0.3s,
+    color 0.3s;
+}
+.contact-link:hover {
+  padding-left: 10px;
+  color: #746044;
+}
+.contact-link-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid #b8ae9b;
+  border-radius: 50%;
+  font-size: 13px;
+  letter-spacing: -0.6px;
+}
+.contact-link-icon--linkedin {
+  font-size: 18px;
+  font-weight: 700;
+}
+.contact-link-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+.contact-link-copy > span {
+  font-size: 8px;
+  letter-spacing: 1.7px;
+  color: #777165;
+}
+.contact-link-copy strong {
+  font-size: clamp(15px, 1.7vw, 25px);
+  font-weight: 400;
+  letter-spacing: -0.6px;
+  overflow-wrap: anywhere;
+}
+.contact-link > svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-left: auto;
+  transition: transform 0.3s;
+}
+.contact-link:hover > svg {
+  transform: translate(3px, -3px);
+}
+@media (max-width: 540px) {
+  .contact-link {
+    gap: 13px;
+    padding: 23px 0;
+  }
+  .contact-link-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 11px;
+  }
+  .contact-link-icon--linkedin {
+    font-size: 16px;
+  }
+  .contact-link-copy strong {
+    font-size: 16px;
+    letter-spacing: -0.5px;
+  }
+  .contact-link > svg {
+    width: 17px;
+    height: 17px;
+  }
+  .contact-link-copy > span {
+    font-size: 7px;
+  }
+}
